@@ -6,10 +6,10 @@ WORKDIR /app
 
 # Copy package files and install dependencies
 COPY package*.json ./
-RUN npm ci
+RUN npm install
 
 # Copy the rest of your application code
 COPY . .
 
 # Define the command to run your MCP server
-CMD ["node", "index.ts"]
+CMD ["node", "index.js"]
