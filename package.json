@@ -2,9 +2,9 @@
     "name": "custom-mcp-server",
     "version": "1.0.0",
     "type": "module",
-    "main": "index.ts",
+    "main": "index.js",
     "scripts": {
-        "start": "node index.ts"
+        "start": "node index.js"
     },
     "dependencies": {
         "@modelcontextprotocol/sdk": "^1.12.0",
