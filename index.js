@@ -1,5 +1,5 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { HttpServerTransport } from "@modelcontextprotocol/sdk/server/http.js"; // Adjust if different
 import { z } from "zod";
 
 const server = new McpServer({
@@ -46,6 +46,5 @@ server.tool(
   }
 );
 
-const transport = new StdioServerTransport();
-
+const transport = new HttpServerTransport({ port: 8080 });
 await server.connect(transport);
