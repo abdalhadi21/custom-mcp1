@@ -1,2 +1,3 @@
 #!/bin/sh
-node index.js
+node index.js &
+tail -f /dev/null
