@@ -15,8 +15,5 @@ COPY start.sh .
 # Make start.sh executable
 RUN chmod +x start.sh
 
-# Expose port for HTTP transport
-EXPOSE 8080
-
 # Command to run the application
 CMD ["./start.sh"]
