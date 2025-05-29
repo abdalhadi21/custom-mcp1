@@ -1,12 +1,12 @@
 {
-    "name": "custom-mcp-server",
-    "version": "0.0.1",
-    "description": "MCP server for weather data",
-    "main": "index.js",
-    "type": "module",
-    "scripts": {
-      "start": "bash start.sh"
-    },
+  "name": "custom-mcp-server",
+  "version": "0.0.1",
+  "description": "MCP server for weather data",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "bash start.sh"
+  },
     "dependencies": {
         "@modelcontextprotocol/sdk": "^1.12.0",
         "node-fetch": "^3.3.2",
